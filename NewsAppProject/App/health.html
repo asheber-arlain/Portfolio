@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<head>
+<title>Articles</title>
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script type="text/javascript"> google.load("feeds", "1")</script>
+<link href='http://fonts.googleapis.com/css?family=Belleza' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Lora:400,400italic' rel='stylesheet' type='text/css'>
+<script src="javascript/js.js" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="css/css.css" media="all"/>
+</head>
+<body>
+
+<a href="javascript:history.go(-1)"><img src="images/back.png" /></a> 
+<a onclick="redirectAndRemove()" id="logout"><img src="images/logout.png" /></a>
+<div id ="logodiv"><h2 id="logo">Unsorted News</h2></div>
+
+
+<p id="title">Latest Health News</p>
+
+<div id="container"> 
+
+<p id="hello">Hello, <strong id="displayName"></strong></p>
+
+<form id="searchbar">
+<input type="search" name="search" placeholder="search">
+<input type="submit"> 
+</form>
+
+<div id="nav">
+<ul>
+	<li><a href="sections.html">Sections</a></li>
+	<li><a href="favorites.html">Favorites</a></li>
+</ul>
+</div>
+
+<div id="feeddiv"></div>
+
+<script type="text/javascript">
+	var feedcontainer=document.getElementById("feeddiv");
+	var feedurls = new Array();
+	feedurls[0] = "http://www.reddit.com/r/health/.rss";
+	feedurls[1] = "http://www.npr.org/rss/rss.php?id=1027"
+	feedurls[2] = "http://news.prlog.org/us/ind/health/rss.xml"
+	var feedlimit=10;
+	var rssoutput="";
+	
+	function rssfeedsetup(){
+		for(var i=0;i<feedurls.length;i++) {		
+			var feedpointer=new google.feeds.Feed(feedurls[i]); //Google Feed API method
+			feedpointer.setNumEntries(feedlimit); //Google Feed API method
+			feedpointer.load(displayfeed); //Google Feed API method
+		}
+	}
+	
+	function displayfeed(result){
+		if (!result.error){
+		var thefeeds=result.feed.entries
+		
+		for (var i=0; i<thefeeds.length; i++)
+			rssoutput+="<li><a href='" + thefeeds[i].link + "'>" + thefeeds[i].title + "</a></li>"
+			
+			feedcontainer.innerHTML=rssoutput
+		}
+		else
+		alert("Error fetching feeds!")
+	}
+	window.onload=function()
+	{
+		displayUserName()
+		rssfeedsetup()
+	}
+</script>
+</div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<head>
+<title>Sections</title>
+<script src="javascript/js.js" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="css/css.css" media="all"/>
+<link href='http://fonts.googleapis.com/css?family=Lora:400,400italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Belleza' rel='stylesheet' type='text/css'>
+</head>
+<body onload="displayUserName()">
+
+<a href="javascript:history.go(-1)"><img src="images/back.png" /></a> 
+<a onclick="redirectAndRemove()" id="logout"><img src="images/logout.png" /></a>
+
+<div id ="logodiv"><h2 id="logo">Unsorted News</h2></div>
+
+
+<p id="title">Sections</p>
+
+<div id="container"> 
+
+<p id="hello">Hello, <strong id="displayName"></strong></p>
+
+<form id="searchbar">
+<input type="search" name="search" placeholder="search">
+<input type="submit"> 
+</form>
+
+<div id="nav">
+<ul>
+	<li><a href="sections.html">Sections</a></li>
+	<li><a href="favorites.html">Favorites</a></li>
+</ul>
+</div>
+<div id="sections">
+	<li><a href="business.html">Business</a></li>
+	<li><a href="entertainment.html">Entertainment</a></li>
+	<li><a href="health.html">Health</a></li>
+	<li><a href="sports.html">Sports</a></li>
+	<li><a href="technology.html">Technology</a></li>
+</div>
+</div>
+</body>
+</html>

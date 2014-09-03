@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<head>
+    <title>News App Design Document</title>
+    <link href="index.css" type="text/css" rel="stylesheet" media="all"/>
+</head>
+<body>
+	<div id ="container">
+	
+	<h1 id="title">News Application</h1>
+
+	<section>
+
+		<article id="article1">
+			<h2>Goals of the app</h2>
+
+			<ul>
+				<li>To design an app to find and display news.</li>
+				<li>Create an app that looks good and easy to use on mobile.</li>
+				<li>Provide good navigation and interactional flow for users.</li>
+			</ul>
+		</article>
+
+		<article id="article2">
+
+			<h2>User Experience</h2>
+
+			<h3>Audience</h3>
+
+			<ul>
+				<li>Students: Students may use the news app to check the latest news while heading to classes or while waiting in-between classes.</li>
+				<li>Business Person: A business person may use the news app while taking a lunch break or while commuting to work to catch up on recent news.</li>
+				<li>Other: Other can refer to anyone else as many different people may use a news app for different purposes. This can include travelers, teenagers, and other people who may check the news daily.</li>
+			</ul>
+
+			<h3>Scenarios</h3>
+
+			<p>Scenario 1, Audience Category:Student </p>
+			<p>Leon Lee is a 20 year old college student attending Rochester Institute of Technology. He has an
+			interest in what's current in the news around the world and uses his phone constantly as he's always on the go. 
+			He plans to use the news app to check the news he finds interesting while he's heading to his classes and in-between classes.</p>
+
+			<p>Scenario 2, Audience Category:Business Person</p>
+			<p>Kellie Jensen is a 24 year old post college student living near Boston, Massachusetts. She works at a
+			Bank of America located in the financial district in down-town Boston. Each morning she commutes over 30 minutes
+			to get to work and uses her phone to read the news. She plans to use the news app to read the news during her morning
+			commute to keep her occupied while on the train.</p>
+
+			<p>Scenario 3, Audience Category:Other</p>
+			<p>Sam Moore is a 44 year old international aid worker who travels around the world often to help those in need.
+			He's been to places such as Afghanistan and Somalia to teach young children and enjoys what he does. Since he travels a lot
+			he has to spend much of his time on the plane. During this time he usually reads novels but would like to use this app so that we
+			is able to read the news as well.</p>
+
+
+			<h2>Competitive Analysis</h2>
+
+			<h3>App 1: New York Times App</h3>
+			<p>Pros: Ability to save news for 7 days and interface that is easy to navigate and organized. </p>
+			<p>Cons: Banner ads at the bottom of screen.</p>
+
+			<h3>App 2: CNN App</h3>
+			<p>Pros: Shows local news and  weather.</p>
+			<p>Cons: Sections not organized that well.</p>
+
+			<h3>App 3: AP Mobile</h3>
+			<p>Pros: Easy to navigate and good looking interface.</p>
+			<p>Cons: Banner ads at the bottom of screen.</p>
+
+			<table border="1">
+				<tr>
+					<th colspan="4">Competitive Analysis</th>
+				</tr>
+
+				<tr>
+					<th>General</th>
+					<th>NYT App</th>
+					<th>CNN App</th>
+					<th>AP Mobile App</th>
+				</tr>
+
+				<tr>
+					<td>Design(1-5)</td>
+					<td>4</td>
+					<td>3</td>
+					<td>5</td>
+				</tr>
+
+				<tr>
+					<td>Navigation (1-5)</td>
+					<td>5</td>
+					<td>2</td>
+					<td>4</td>
+				</tr>
+
+				<tr>
+					<td>Layout (1-5)</td>
+					<td>5</td>
+					<td>4</td>
+					<td>5</td>
+				</tr>
+
+				<tr>
+					<td>Organization (1-5)</td>
+					<td>5</td>
+					<td>5</td>
+					<td>5</td>
+				</tr>
+
+				<tr>
+					<th colspan="4">Functionality</th>
+				</tr>
+
+
+				<tr>
+					<td>Local news</td>
+					<td>&#x2717;</td>
+					<td>&#x2717;</td>
+					<td>&#x2713;</td>
+				</tr>
+
+				<tr>
+					<td>Ability to save news stories</td>
+					<td>&#x2713;</td>
+					<td>&#x2713;</td>
+					<td>&#x2713;</td>
+				</tr>
+
+				<tr>
+					<td>Breaking news in banner</td>
+					<td>&#x2717;</td>
+					<td>&#x2717;</td>
+					<td>&#x2713;</td>
+				</tr>
+
+				<tr>
+					<td>Ability to share stories</td>
+					<td>&#x2713;</td>
+					<td>&#x2713;</td>
+					<td>&#x2713;</td>
+				</tr>
+			</table>
+		
+		<section id="section3">
+			<h2>Content</h2>
+			<p>
+			    <ol>
+			    <li>Home</li>
+			    <li>My Stories</li>
+			    <li>Topics</li>
+			    <li>search</li>
+			    </ol>
+			</p>
+			
+			<h3>Home</h3>
+			
+			<p>
+			    
+			    The home page will contain the sop stories of the day
+			    for each topic.
+			    <ul>
+				<li>Top Story Titles</li>
+				<li>Last updated time-stamp</li>
+			    </ul>
+			</p>
+			
+			<h3>My Stories</h3>
+			
+			<p>
+			    My Stories will hold articles the user saves.
+
+			    
+			</p>
+			
+			<h3>Topics</h3>
+			
+			<p>
+			    Topics will contain the different categories of news
+			    in the user can choose from.
+		    	    <ul>
+				<li>News categories, technology, world, etc.</li>
+		
+			    </ul>
+			</p>
+			
+			<h3>Search</h3>
+			<P>
+			    Allows the user to search for a key term in the articles listed
+			    <ul>
+				<li>Start and end date selection</li>
+				<li>key terms search box</li>
+			    </ul>
+			</P>
+			
+			<h2>Functional Requirements</h2>
+			<p>
+			    <ul>
+			    <li><b>Navigation</b> - The navigation should be intuitive and consistent throughout the design.</li>
+			    <li><b>Information Access</b> - The user should be able to easily search for a story they've heard about.</li>
+			    <li><b>Favorites</b> - The user should be able to save the articles they find interesting.</li>
+			    <li><b>Share</b> - The user will be able to share articles.</li>
+			    </ul>
+			</p>
+			
+		</section>
+
+		<section id="section4">
+			<h2>Site Structure</h2>
+			
+			<h3>Navigation</h2>
+			<img src="nav.png" alt="pic"/>
+		</section>
+		
+		<section id="section5">
+			<h2>Visual Design</h2>
+			
+			<h3>Mock-ups</h3>
+			<img id="wireframes" src="wireframes.png" alt="pic"/>
+			
+		</section>
+
+		<section id="section6">
+			<p>
+				<a href="App/login.html">Click here to view the completed app!</a>	
+			</p>
+		</section>
+		
+		</article>	
+	</div>
+</body>
+</html>
