@@ -1,0 +1,94 @@
+h1
+{
+	text-align:center;
+	font-size:24pt;
+	font-family:broadway, impact, castellar; 
+	padding-bottom:1em;
+}
+
+h2
+{
+	font-size:16pt;
+	text-decoration:underline;
+	padding-left:12em;
+}
+
+#logo
+{
+	padding-top:1em;
+	padding-bottom:2em;
+	text-align:center;
+}
+
+span
+{
+	background-color:red;
+	border:5px inset black;
+}
+
+p.one
+{
+	padding-left:15em;
+	padding-right:7em;
+	text-indent:3em;
+	font-size:12pt;
+	display:table;
+}
+
+p.two
+{
+	padding-left:15em;
+	padding-right:7em;
+	font-size:12pt;
+	display:table;
+}
+
+ol
+{
+	padding-left:18em;
+	padding-right:7em;
+	font-size:12pt;
+	display:table;
+}
+
+ul
+{
+	list-style-type:none;
+	float:left;
+	margin:0;
+	padding:0;
+	padding-right:3em;
+	position:fixed;
+}
+.bigbold
+{
+	font-size:18pt;
+	font-weight:bold;
+	padding-left:10em;
+}
+
+a.nav
+{
+	display:block;
+	text-decoration:none;
+	color:white;
+	background-color:black;
+	padding:0.75em 0.75em;
+	font-size:14pt;
+}
+
+a.nav:hover {background-color:red;}
+
+a.reg:link{color:black;}
+a.reg:visited{color:gray;}
+a.reg:hover{color:red;}
+
+.footer 
+{
+	position: relative; 
+	height:75px; 
+	text-align:center;
+	font-size:9pt;
+	margin-top:15em;
+}
+
